@@ -1,0 +1,15 @@
+[Unit]
+Description=sausage-store
+
+[Service]
+User=vagrant
+ExecStart=/usr/bin/java -Xms128m -Xmx256m -jar /home/vagrant/chapter/sausage-store-0.0.1.jar
+WorkingDirectory=/home/vagrant/chapter
+SuccessExitStatus=143
+Type=simple
+Restart=on-failure
+RestartSec=10
+StandardOutput=file:/home/vagrant/chapter/out.log
+StandardError=file:/home/vagrant/chapter/outerror.log
+[Install]
+WantedBy=multi-user.target
