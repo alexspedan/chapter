@@ -14,5 +14,5 @@ sudo npm run build
 sudo npm install -g http-server
 sudo http-server /home/vagrant/frontend -p 80 --proxy http://localhost:8080
 cd
-cd /home/vagrant/chapter/backend 
+cd /home/vagrant/chapter
 java -jar sausage-store-0.0.1.jar
