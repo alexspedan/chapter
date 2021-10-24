@@ -15,7 +15,13 @@ cd /home/vagrant/chapter/frontend
 npm install
 npm run build
 npm install -g http-server
-http-server /home/vagrant/frontend -p 80 --proxy http://localhost:8080
 cd
 cd /home/vagrant/chapter
-java -jar sausage-store-0.0.1.jar
+cp /home/vagrant/chapter/sausage-store.service /etc/systemd/system/sausage-store.service
+cp /home/vagrant/chapter/frontend.service /etc/systemd/system/frontend.service
+systemctl daemon-reload
+systemctl enable sausage-store.service
+systemctl start sausage-store.service
+
+systemctl enable frontend.service
+systemctl start frontend.service
