@@ -15,6 +15,8 @@ SyslogIdentifier=frontend
 User=root
 #Group=<alternate group>
 #Environment=NODE_ENV=production PORT=1337
+TimeoutStartUSec=3min
+TimeoutStopUSec=infinity
 
 [Install]
 WantedBy=multi-user.target
