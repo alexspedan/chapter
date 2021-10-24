@@ -1,0 +1,20 @@
+[Unit]
+Description=frontend
+Requires=network.target
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/http-server -p 80 --proxy http://localhost:8080
+Type=forking
+WorkingDirectory=/home/vagrant/chapter/frontend  
+Restart=always
+RestartSec=10                        
+StandardOutput=/log/front.log
+StandardError=front
+SyslogIdentifier=frontend
+User=root
+#Group=<alternate group>
+#Environment=NODE_ENV=production PORT=1337
+
+[Install]
+WantedBy=multi-user.target
