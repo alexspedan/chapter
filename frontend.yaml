@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: gitlab.praktikum-services.ru:5050/aspedan/dumpling-store/gofront:2.0
+          image: gitlab.praktikum-services.ru:5050/aspedan/dumpling-store/gofront:1.0
         #  image: gitlab.praktikum-services.ru:5050/aspedan/sausage-store/sausage-store-multistage:latest
         #  image: gitlab.praktikum-services.ru:5050/aspedan/sausage-store/sausage-frontend:latest
           ports:
