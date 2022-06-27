@@ -51,10 +51,10 @@ spec:
 #              path: nginx.conf
 #            - key: virtualhost.conf
 #              path: virtualhost/virtualhost.conf # dig directory
-        - name: log
-          emptyDir: {}          
-      imagePullSecrets:
-        - name: regcred
+#        - name: log
+#          emptyDir: {}          
+#      imagePullSecrets:
+#        - name: regcred
 
 ---
 apiVersion: v1
