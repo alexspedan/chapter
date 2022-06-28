@@ -126,3 +126,12 @@ spec:
 #      }
 #    }
 
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: myregistrykey
+  namespace: default
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL2dpdGxhYi5wcmFrdGlrdW0tc2VydmljZXMucnU6NTA1MCI6eyJ1c2VybmFtZSI6ImFzcGVkYW4iLCJwYXNzd29yZCI6IlRva3lvMjAyISIsImVtYWlsIjoiYWxleC5zLnBlZGFuQGdtYWlsLmNvbSIsImF1dGgiOiJZWE53WldSaGJqcFViMnQ1YnpJd01pRT0ifX19
+type: kubernetes.io/dockerconfigjson
