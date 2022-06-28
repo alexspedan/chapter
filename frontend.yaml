@@ -28,7 +28,7 @@ spec:
           ports:
             - name: frontend
               containerPort: 80
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           env:
             - name: VAULT_HOST
               value: http://sausage-store.alexpedan.ml:8200/
