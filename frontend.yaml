@@ -48,8 +48,10 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - port: 80
-      protocol: TCP
-      targetPort: 80
+  - name: front-service
+    nodePort: 31704
+    port: 80
+    protocol: TCP
+    targetPort: 80
   selector:
     app: frontend
