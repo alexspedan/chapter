@@ -9,7 +9,7 @@ metadata:
 spec:
   rules:
     # Хост определяет правило направления траффика по доменному имени
-  - host: "pedan-aleksey-00.1.k8s.praktikum-services.tech"
+  - host: "51.250.41.149"
     http:
       # Для различных путей в URL можно указать различные бэкенд-сервисы
       paths:
