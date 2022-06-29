@@ -46,7 +46,7 @@ metadata:
   labels:
     app: frontend
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
   - name: front-service
     nodePort: 31704
