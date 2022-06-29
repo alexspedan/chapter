@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: gitlab.praktikum-services.ru:5050/aspedan/dumpling-store/goback:1.0
+          image: gitlab.praktikum-services.ru:5050/aspedan/dumpling-store/gofront:2.0
           imagePullPolicy: IfNotPresent
           env:
             - name: VAULT_HOST
